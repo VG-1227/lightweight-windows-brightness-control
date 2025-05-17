@@ -1,4 +1,4 @@
-#Windows Brightness Control
+# Windows Brightness Control
 A simple yet powerful AutoHotkey-based utility for controlling screen brightness and Windows Night Light settings with automatic time-based adjustments.
 Features
 
