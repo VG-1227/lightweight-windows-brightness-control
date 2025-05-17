@@ -8,19 +8,19 @@ Time-based automatic adjustments - Different brightness levels and Night Light s
 Customizable settings - Adjust all parameters through a simple settings menu
 Visual feedback - On-screen display shows brightness level when adjusting
 
-Requirements
+## Requirements
 
 Windows 10 or 11
 AutoHotkey v1.1 or later installed
 
-Installation
+## Installation
 
 Clone this repository or download the zip file
 Make sure AutoHotkey is installed on your system
 Double-click the BrightnessControl.ahk file to run it
 For automatic startup, create a shortcut to the script in your startup folder (shell:startup)
 
-Usage
+## Usage
 Hotkeys
 HotkeyFunctionCtrl+Alt+UpIncrease brightness by 5%Ctrl+Alt+DownDecrease brightness by 5%Ctrl+Alt+NToggle night light on/offCtrl+Alt+AAuto mode (adjust based on time of day)Ctrl+Alt+SOpen settings menu
 Automatic Mode
@@ -31,16 +31,20 @@ Evening (5PM-9PM): Medium brightness (50%), moderate Night Light
 Night (9PM-7AM): Low brightness (30%), stronger Night Light
 
 You can customize these settings through the settings menu (Ctrl+Alt+S).
-How It Works
+
+
+## How It Works
 This utility uses:
 
 PowerShell commands via AutoHotkey to control monitor brightness
 Windows Registry modifications to control the Night Light feature
 AutoHotkey's GUI capabilities for the settings interface
 
-Customization
+## Customization
 To modify default settings, open the script in a text editor and adjust the variables in the CONFIGURATION SECTION at the top:
-autohotkey; Default brightness levels (0-100)
+autohotkey
+
+; Default brightness levels (0-100)
 dayBrightness := 80
 eveningBrightness := 50
 nightBrightness := 30
@@ -58,18 +62,18 @@ Brightness control doesn't work: Some monitors or laptop displays may not suppor
 Night Light issues: The Night Light feature manipulates Windows registry values and may not work on all Windows versions. Try toggling Night Light manually in Windows settings first.
 Script errors: Make sure you're using the correct version of AutoHotkey (v1.1+).
 
-License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-Fork the repository
+## Fork the repository
 Create your feature branch (git checkout -b feature/amazing-feature)
 Commit your changes (git commit -m 'Add some amazing feature')
 Push to the branch (git push origin feature/amazing-feature)
 Open a Pull Request
 
-Acknowledgments
+## Acknowledgments
 
 AutoHotkey for making Windows automation possible
 Windows PowerShell for providing brightness control capabilities
